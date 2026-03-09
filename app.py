@@ -18,17 +18,73 @@ st.set_page_config(
 st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-    html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
-    .main { background-color: #0d1117; padding-top: 1rem; }
+    
+    html, body, [class*="css"] { 
+        font-family: 'Inter', sans-serif; 
+    }
+
+    /* Fixed: Adjusted padding to prevent header from being hidden behind Streamlit top bar */
+    .block-container {
+        padding-top: 4rem !important;
+        padding-bottom: 1rem !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+
+    .main { background-color: #0d1117; }
+    
     div[data-testid="stMetricValue"] { font-size: 1.6rem; font-weight: 700; color: #58a6ff; }
-    div[data-testid="stMetric"] { background: rgba(22, 27, 34, 0.7); padding: 10px 15px; border-radius: 10px; border: 1px solid rgba(48, 54, 61, 0.8); }
-    .intel-box { padding: 15px; border-radius: 10px; color: white; text-align: center; border: 1px solid rgba(255, 255, 255, 0.1); height: 100%; display: flex; flex-direction: column; justify-content: center; }
-    .live-pulse { background: rgba(255, 75, 75, 0.1); color: #ff4b4b; padding: 2px 10px; border-radius: 15px; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(255, 75, 75, 0.3); animation: blinker 2s linear infinite; }
+    
+    div[data-testid="stMetric"] { 
+        background: rgba(22, 27, 34, 0.7); 
+        padding: 10px 15px; 
+        border-radius: 10px; 
+        border: 1px solid rgba(48, 54, 61, 0.8); 
+    }
+    
+    .intel-box { 
+        padding: 15px; 
+        border-radius: 10px; 
+        color: white; 
+        text-align: center; 
+        border: 1px solid rgba(255, 255, 255, 0.1); 
+        height: 100%; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+    }
+    
+    .live-pulse { 
+        background: rgba(255, 75, 75, 0.1); 
+        color: #ff4b4b; 
+        padding: 2px 10px; 
+        border-radius: 15px; 
+        font-size: 0.75rem; 
+        font-weight: 600; 
+        border: 1px solid rgba(255, 75, 75, 0.3); 
+        animation: blinker 2s linear infinite; 
+    }
+    
     @keyframes blinker { 50% { opacity: 0.5; } }
-    h1 { font-size: 1.8rem !important; font-weight: 800; background: -webkit-linear-gradient(#fff, #8b949e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .perf-card { background: rgba(22, 27, 34, 1); border: 1px solid #30363d; border-radius: 8px; padding: 8px; text-align: center; }
+    
+    h1 { 
+        font-size: 1.8rem !important; 
+        font-weight: 800; 
+        background: -webkit-linear-gradient(#fff, #8b949e); 
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent; 
+        margin-top: 0px !important;
+    }
+    
+    .perf-card { 
+        background: rgba(22, 27, 34, 1); 
+        border: 1px solid #30363d; 
+        border-radius: 8px; 
+        padding: 8px; 
+        text-align: center; 
+    }
+    
     .perf-label { color: #8b949e; font-size: 0.7rem; text-transform: uppercase; margin-bottom: 2px; }
-    .block-container { padding-top: 1.5rem !important; padding-bottom: 1rem !important; }
     </style>
     """, unsafe_allow_html=True)
 
