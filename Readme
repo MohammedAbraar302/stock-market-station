@@ -1,0 +1,35 @@
+While this application is a "Weather Station" rather than a crystal ball, it helps you move from emotional guessing to data-driven analysis. Here is how you can use the results to inform an investment decision:
+
+1. Identifying Statistical "Edges"
+If you are looking at a company like Apple (AAPL), the ML Forecast (5D) tells you if current conditions historically lead to a price increase.
+
+How it helps: If the forecast is ☀️ BULLISH with High Confidence (e.g., >70%), it suggests that the current "market weather" is similar to past setups that were profitable. It gives you a statistical reason to be optimistic.
+
+2. Avoiding "Overheated" Entries
+One of the biggest mistakes investors make is buying at the very top of a rally (FOMO).
+
+How it helps: Look at the Market RSI. If the RSI is above 70, the stock is "Overbought." Even if the company is great, the dashboard is warning you that a price "cool down" or correction is likely. You might decide to wait for the RSI to drop before buying.
+
+3. Understanding the "Why" (Logical Weights)
+If the ML model says "BEARISH," you shouldn't just take its word for it.
+
+How it helps: Look at the AI Logical Weights chart. If Volatility has a high weight, it means the model is worried because the stock is swinging too wildly. This helps you decide if you have the stomach for a "bumpy ride" or if you'd prefer a more stable investment.
+
+4. Real-Time Pulse Check
+Markets move fast, and news can change sentiment in minutes.
+
+How it helps: The Momentum Vibe box acts as a real-time health check. A HEALTHY status means the price action is supported by strong momentum and low erratic behavior. If it flips to CAUTION, it might be a signal to dig deeper into the news or hold off on a large purchase.
+
+5. Confirming Trends with Moving Averages
+In the Interactive Trajectory chart, you see the MA20 (Orange) and MA50 (Cyan) lines.
+
+How it helps: A classic investment signal is when the price stays above these lines. If the price is currently below the MA50 but the ML says "BULLISH," the model might be predicting a "mean reversion"—a jump back up to the average.
+
+Summary for an Investor:
+This page helps you answer three critical questions before you hit "Buy":
+
+Is the timing right? (Check RSI and MA Distance)
+
+Is the trend reliable? (Check ML Forecast and Confidence)
+
+What is the risk level? (Check Volatility and Momentum Vibe)
